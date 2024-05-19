@@ -1,0 +1,13 @@
+[package]
+name = "comfy-fences"
+version = "0.1.0"
+edition = "2021"
+
+[profile.dev]
+opt-level = 1
+[profile.dev.package."*"]
+opt-level = 1
+
+[dependencies]
+comfy = "0.4.0"
+fences = { git = "https://github.com/azarmadr/fences", version = "0.1.0" }
